@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	-webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    letter-spacing: 0.5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-log{	
+	background-image: url("../Resources/FONDO2.jpg");
+	background-repeat:no-repeat;		
+}
+
+.link-buttom{
+	pointer-events: auto;
+    text-align: center!important;
+    box-sizing: border-box;
+    font-style: normal!important;
+    font-weight: 700!important;
+    line-height: 100%!important;
+    font-size: 14px;
+    color: #16a2ff!important;
+    background: 0 0;
+    cursor: pointer;
+    outline: 0;
+    text-decoration: underline;
+}
+p{
+
+	--fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    -webkit-tap-highlight-color: rgba(38,38,38,0);
+    font-family: Muli,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    
+}
+
+.no-cuenta{
+	font-weight: 400;
+    line-height: normal;
+    font-size: 16px;
+    pointer-events: auto;
+    color: black;
+    text-align: center!important;
+    box-sizing: border-box;
+    margin: 0 0 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: -2px;
+}
+
+.form-log{
+	box-shadow: 7px 13px 37px rgba(0, 0, 0, .5);
+	padding: 15px;
+	margin: auto;
+	border-radius: 10px;
+	width: 300px;
+	flex-wrap: wrap;
+	min-width: 200px;
+	box-sizing: border-box;
+
+}
+    
+.form-log h1{
+	text-align: center;
+	border-bottom: 1px solid #37BAD8;
+	padding: 5px;
+	margin-bottom: 25px;
+	font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
+    color: black;
+}
+
+.fake_placeholder{
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.username, .passw{
+	position: relative;
+	border-bottom: 2px solid lightslategrey;
+	margin-bottom: 20px;
+	width: 80%;
+	left: 10%;
+}
+
+.username input, .passw input{
+	width: 100%;
+	padding: 9px;
+	border: none;
+	background: none;
+	outline: none;
+}
+
+.fake_placeholder span{
+	position: absolute;
+	top: 50%;
+	left: 9px;
+	transform: translateY(-50%);
+	color: #adadad;
+	pointer-events: none;
+    font-family: Muli,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	transition: 0.3s ease-in-out;
+}
+
+.ingreso{
+	--fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    font: inherit;
+    white-space: nowrap;
+    touch-action: manipulation;
+    background-image: none;
+    flex-wrap: wrap;
+    min-width: 200px;
+    pointer-events: auto;
+    box-sizing: border-box;
+    outline: 0;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    font-size: 14px;
+    font-style: normal!important;
+    font-weight: 700!important;
+    line-height: 100%!important;
+    margin: auto;
+    margin-top: 35px;
+    font-family: Muli,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: 45px;
+    cursor: pointer;
+    display: block;
+    width: 30%;
+    height: 45px;
+    transition: .18s linear;
+    color: #fff!important;
+    background-color: #37BAD8;
+    border: solid transparent;
+}
+.ingreso:hover{
+	border-color: white;
+}
+.username:hover, .passw:hover{
+	content: '';
+	border-color: #03D0A1;
+}
+
+.fake_placeholder span.reubicar{
+	color: #03D0A1;
+	top: -8px;
+}
