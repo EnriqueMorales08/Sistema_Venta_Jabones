@@ -1,0 +1,528 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #008fb1 #f00000;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #008fb1;
+    border-radius: 10px;
+    border: 2px solid #e8f1f2;
+}
+.index-body{
+    background: #e8f1f2;
+}
+
+/*MENU*/
+
+.menu{
+    z-index: 999;
+    background: #fff4e6;
+    box-shadow: 2px 5px 10px 1px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+}
+.top{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 250px;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.logo{
+    flex-wrap: wrap;
+    max-width: 250px;
+    padding-right: 130px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 13px;
+    width: 85px;
+    margin: auto;
+}
+.logo img{
+    height: 60px;
+}
+.find-bar form{
+    flex-wrap: wrap;
+    min-width: 250px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-content: center;
+}
+.find-bar{
+    flex-wrap: wrap;
+    min-width: 250px;
+    width: 40%;
+    height: 5vh;
+    background: #F4ECE1;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+}
+.find-bar form a{
+    position: absolute;
+    display: flex;
+    align-self: center;
+    color: #D9BA91;
+    margin-left: 0.5%;
+}
+.find-bar form a:hover{
+    color: #92570A;
+}
+.find-bar input{
+    background: transparent;
+    border-color: transparent;
+    width: 86%;
+    margin-left: 5%;
+    height: 100%;
+    align-self: center;
+    color: #C97B20;
+}
+.find-bar input:focus{
+    outline: none;
+}
+
+.user{
+    position: relative;
+    z-index: 90;
+    width: 8%;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: #D9BA91;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    min-width: 200px;
+    align-content: center;
+    justify-content: space-between;
+}
+.icon-user:hover{
+    color: #b5905e;
+}
+.login{
+    overflow: hidden;
+    position: absolute;
+    flex-wrap: wrap;
+    min-width: 250px;
+    justify-content: center;
+    margin-top: 45px;
+    align-items: center;
+}
+.triangulo{
+    bottom: 18rem;
+    margin-left: 55px;
+    box-sizing: content-box;
+    border-right: 1rem solid transparent;
+    border-top: 1rem solid transparent;
+    border-left: 1rem solid transparent;
+    border-bottom: 1rem solid #ebb2ea;
+    position: absolute;
+}
+.icon-user{
+    color: #D9BA91;
+    font-size: 4vh;
+}
+.icon-user:hover{
+    cursor: pointer;
+}
+.user-text{
+    -webkit-user-select: none;
+    display: flex;
+    margin-left: 5%;
+    flex-wrap: wrap;
+    min-width: 150px;
+    align-self: center;
+}
+.cart{
+    width: 5%;
+    font-size: 4vh;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100px;
+    margin: auto;
+    justify-content: start;
+    color: #D9BA91;
+}
+.fa-cart-shopping{
+    position: absolute;
+    align-self: center;
+    display: flex;
+}
+.fa-cart-shopping:hover{
+    cursor: pointer;
+}
+.bottom{
+    font-family: "Century Gothic";
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+}
+.bottom ul{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 5vh;
+}
+.bottom ul li{
+    display: block;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+}
+.bottom ul li a{
+    margin-top: 5px;
+    width: 100%;
+    color: #00a37c;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.bottom ul li a:hover{
+    text-decoration: underline 5px #92ce7c;
+    transition: 0.5s;
+}
+
+.user.active .login{
+    height: 18rem;
+    overflow: visible;
+    animation: fade 0.5s ease-in-out;
+}
+
+.cuerpo{
+    display: block;
+    border-radius: 7px;
+    position: absolute;
+    background-image: url("../resources/FONDO2.jpg");
+    background-repeat:no-repeat;
+    box-shadow: 2px 5px 10px 1px rgba(0, 0, 0, 0.2);
+    border-top: transparent;
+    padding: 15px;
+
+}
+
+/*INICIO*/
+
+.banner{
+    flex-wrap: wrap;
+    min-width: 250px;
+    width: 100%;
+    margin-top: 5px;
+    overflow: hidden;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+.banner img{
+    flex-wrap: wrap;
+    min-width: 250px;
+    width: 100%;
+    padding-top: -5%;
+
+}
+
+/*CARRUSEL*/
+
+.carrusel{
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 5%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 250px;
+    align-content: center;
+    justify-content: center;
+}
+.slide{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 250px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 20%;
+    text-align: center;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: #00a37c;
+    justify-content: center;
+    align-content: center;
+}
+.slide p{
+    margin-top: 5%;
+}
+.slide-img{
+    height: 22vh;
+    width: 22vh;
+    border-radius: 1000px;
+    overflow: hidden;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+.slide-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/*FORMULARIO*/
+
+.contactanos{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    background: rgba(0, 143, 177, 0.5);
+    padding: 10px;
+    border-radius: 5vh;
+    margin-top: 55px;
+    margin-bottom: 75px;
+}
+.form-sides{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 250px;
+}
+
+.form-right{
+    margin-top: 5px;
+    flex-wrap: wrap;
+    min-width: 250px;
+    width: 50%;
+    text-align: center;
+}
+
+.form-left{
+    flex-wrap: wrap;
+    min-width: 250px;
+    width: 50%;
+    text-align: center;
+    align-content: center;
+}
+
+.form-contacto{
+
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+.form-contacto center{
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 3%;
+    width: 100%;
+    display: block;
+}
+
+.form-left input{
+    flex-wrap: wrap;
+    min-width: 250px;
+    font-family: "Miracle";
+    font-size: 16.5px;
+    text-align: center;
+    margin-left: 10%;
+    width: 80%;
+    height: 30px;
+    align-self: center;
+    justify-self: center;
+    border-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+.form-left span{
+    margin-left: 3%;
+}
+.form-left input:focus, .form-right textarea:focus{
+    outline: none;
+}
+
+input:invalid+span:after {
+    content: 'X';
+}
+
+input:valid+span:after {
+    content: '✓';
+}
+
+.form-right textarea{
+    resize: none;
+    width: 80%;
+    justify-self: center;
+    align-self: flex-start;
+    font-family: "Miracle";
+    font-size: 18px;
+    text-align: center;
+    height: 30vh;
+    border-radius: 10px;
+    border-color: transparent;
+}
+.form-right input {
+    flex-wrap: wrap;
+    min-width: 250px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 10px;
+    border-color: transparent;
+    background: #F4ECE1;
+    color: #C97B20;
+    margin-top: 5%;
+    width: 50%;
+    height: 15%;
+    justify-self: center;
+}
+.form-right input:hover {
+    cursor: pointer;
+    background: #F2E2CC;
+}
+
+/*FOOTER*/
+
+.footer{
+    background: #fff4e6;
+    box-shadow: 5px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    padding: 5vh;
+    font-family: "Century Gothic";
+    color: #92ce7c;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+.footer form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+.noticias{
+    color: #D9BA91;
+    width: 40%;
+    height: 5vh;
+    background: #F4ECE1;
+    display: flex;
+    min-width: 250px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    align-content: center;
+    vertical-align: center;
+    justify-content: center;
+}
+.noticias .submiti{
+    border-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100px;
+    font-size: 13.5px;
+    font-family: "Century Gothic";
+    justify-content: center;
+    color: white;
+    background: #00a37c;
+    width: 20%;
+    height: 100%;
+    justify-self: end;
+    align-self: center;
+}
+.noticias .namei{
+    background: transparent;
+    display: flex;
+    border-color: transparent;
+    margin-left: 2%;
+    width: 78%;
+    height: 100%;
+    justify-self: start;
+    align-self: center;
+}
+.noticias .namei:focus,.noticias .submiti:focus{
+    outline: none;
+}
+.noticias .submiti:hover{
+    cursor: pointer;
+    background: #019874;
+}
+.footer-text span{
+    margin-right: 3%;
+}
+
+/*ARRIBA BOTÓN*/
+
+.btn-arriba{
+    position: absolute;
+    z-index: 999;
+    height: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    max-width: 55px;
+    flex-direction: column;
+    animation: fade 0.5s ease-in-out;
+}
+.arribaa{
+    font-size: 7vh;
+    color: rgba(181, 167, 150, 0.6);
+    transition: display 2s;
+}
+.fa-facebook{
+    font-size: 7vh;
+    color: #5D589E;
+    transition: display 2s;
+}
+.fa-whatsapp{
+    font-size: 7vh;
+    color: #50C258;
+    transition: display 2s;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+

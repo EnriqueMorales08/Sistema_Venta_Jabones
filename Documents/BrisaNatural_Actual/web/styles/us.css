@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Century Gothic";
+}
+
+.us-title{
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.us-historia{
+	width: 60%;
+	height: auto;
+	margin:auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-size: 1.4rem;
+	text-align: justify;
+	align-content: center;
+	justify-content: center;
+}
+.us-cont{
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 60%;
+	justify-self: center;
+	align-self: center;
+}
+.us-cont h1{
+	align-self: center;
+	text-align: center;
+	justify-self: center;
+	margin-bottom: 3%;
+}
+.us-cont p, .us-cont li{
+	list-style: none;
+	font-size: 1.4rem;
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+	margin-bottom: 3%;
+}

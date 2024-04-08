@@ -1,0 +1,61 @@
+
+body{
+    background:#92ce7c;
+    font-family: "Century Gothic";
+    animation-name:fondo;
+    animation-duration: 15s;
+    animation-delay: 15s;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
+}
+
+center h1{
+    position: relative;
+    font-size:3em;
+    animation-name:title;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+}
+
+.btn{
+    background: white;
+    margin-right: 8vw;
+    font-size: 2em;
+    margin-left: 8vw;
+    margin-top: 8vh;
+    padding: 1.2em;
+    padding-left: 6em;
+    padding-right: 6em;
+    text-decoration: none;
+    color:black;
+    border: 5px solid;
+    border-radius: 15px;
+    border-color: #00a37c;
+}
+
+.btn:hover{
+    background: #e8f1f2;
+}
+
+@keyframes fondo{
+    0%{
+        background:#92ce7c;
+    }
+    50%{
+        background:white;
+    }
+    100{
+        background:#92ce7c;
+    }
+}
+@keyframes title{
+    0%{
+        top:0em;
+    }
+    50%{
+        top:0.7em;
+    }
+    100%{
+        top:0em;
+    }
+}
